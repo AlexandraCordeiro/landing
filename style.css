@@ -1,0 +1,206 @@
+/*Fonts*/
+@font-face {
+  font-family: 'The Yoshi';
+  src: url('./font.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Belly Betty';
+  src: url('./fonte2.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./fonte3.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./fonte4.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Zen Kurenaido';
+  src: url('./fonte5.ttf') format('truetype');
+}
+
+.text {
+	font-family: 'Source Sans Pro';
+	font-size: 20px;
+}
+
+.text-menu {
+	font-family: 'Zen Kurenaido';
+	font-size: 30px;
+	color: #90605e;
+}
+
+/*smooth scroll*/
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color:  #EFE5DC;
+}
+
+/*navigation menu*/
+.navigation-menu {
+	text-align: center;
+}
+
+.list-menu {
+	list-style: none;
+}
+
+.list-menu a {
+		text-decoration: none;
+		color: #90605e;
+}
+
+.list-menu a:hover {
+	color: #D0B8AC;
+}
+
+/*h2 heading tags*/
+h2 {
+	font-family: 'Playfair Display';
+	font-size:  40px;
+	color: #D0B8AC;
+	text-align: center;
+}
+
+/*header:  main title and subtitle*/
+header {
+	background-color:  #EFE5DC;
+	padding:  60px;
+	text-align: center;
+}
+
+.title {
+	font-family:  'The Yoshi';
+	color: #D0B8AC;
+	font-size: 40px;
+	margin-bottom: 35px;
+}
+
+.subtitle {
+	font-family:  'The Yoshi';
+	color: #D0B8AC;
+	font-size: 27px;
+	text-align: right;
+}
+
+
+/*div - gallery*/
+.gallery {
+	padding: 20px 15px 20px 15px;
+}
+
+.list-imgs {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.list-imgs li {
+	display: inline-block;
+	shape-margin: 0;
+}
+
+/*div - about*/
+.info {
+	text-align: center;
+	padding: 30px 80px 30px 80px;
+}
+
+/*div - ask lupini*/
+.ask_lupini {
+	text-align: center;
+	padding: 30px 80px 50px 80px;
+}
+
+/* "Contact me!" button*/
+.button {
+	background-color: #D0B8AC;
+	color: #90605e;
+	padding: 10px 10px;
+	border-radius: 15px;
+	text-decoration: none;
+	text-align: center;
+	font-family: 'Zen Kurenaido';
+	font-size: 25px;
+}
+
+.button:hover{
+color: #fef9ef;
+}
+
+/*footer and social media icons*/
+footer{
+	background-color:  #EFE5DC;
+	text-align: center;
+	padding: 10px;
+}
+
+.list-icons {
+	list-style: none;
+}
+
+.list-icons li {
+	display:  inline;
+}
+
+.list-icons a{
+	color:  #c89f9c;
+	padding: 20px;
+}
+
+.list-icons a:hover {
+	color:  #333533;
+}
+
+/*
+The following animation is not my authorship.
+This code was taken from the CodePen website, however, i made some changes so the code is not exactly the same as the original 
+License:
+
+Copyright (c) 2021 by Black (https://codepen.io/thiagoteles/pen/ogoxLw)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+*/
+
+.line-1{
+	  font-family: 'The Yoshi', monospace;
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid transparent;
+    font-size: 150%;
+    color: #D0B8AC;
+    text-align: justify-all;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 5s steps(44) 1s 1 normal both,
+             blinkTextCursor 550ms steps(44) 15 normal;
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 13em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: #D0B8AC;}
+  to{border-right-color: transparent;}
+}
