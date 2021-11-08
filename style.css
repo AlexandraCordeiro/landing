@@ -1,12 +1,9 @@
+/*@AlexandraCordeiro*/
+
 /*Fonts*/
 @font-face {
   font-family: 'The Yoshi';
   src: url('./font.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Belly Betty';
-  src: url('./fonte2.ttf') format('truetype');
 }
 
 @font-face {
@@ -29,11 +26,22 @@
 	font-size: 20px;
 }
 
+.menu-title {
+		font-weight: bold;
+		font-size: 35px;
+}
+
+.menu-item {
+	font-size: 30px;
+	margin-left: 0.75vw;
+}
+
 .text-menu {
 	font-family: 'Zen Kurenaido';
-	font-size: 30px;
 	color: #90605e;
 }
+
+
 
 /*smooth scroll*/
 html {
@@ -51,6 +59,7 @@ body {
 
 .list-menu {
 	list-style: none;
+	padding-left: 0;
 }
 
 .list-menu a {
@@ -73,7 +82,7 @@ h2 {
 /*header:  main title and subtitle*/
 header {
 	background-color:  #EFE5DC;
-	padding:  60px;
+	padding:  0.5%;
 	text-align: center;
 }
 
@@ -132,15 +141,18 @@ header {
 	font-size: 25px;
 }
 
-.button:hover{
+.button:hover {
 color: #fef9ef;
 }
 
 /*footer and social media icons*/
-footer{
+footer {
 	background-color:  #EFE5DC;
 	text-align: center;
 	padding: 10px;
+}
+footer ul {
+	padding-left: 0;
 }
 
 .list-icons {
@@ -149,6 +161,10 @@ footer{
 
 .list-icons li {
 	display:  inline;
+}
+
+.list-icons ul {
+	padding:  0;
 }
 
 .list-icons a{
@@ -176,7 +192,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 */
 
 .line-1{
-    font-family: 'The Yoshi', monospace;
+	  font-family: 'The Yoshi', monospace;
     position: relative;
     top: 50%;  
     width: 24em;
